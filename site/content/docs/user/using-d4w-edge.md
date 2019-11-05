@@ -13,7 +13,29 @@
 ## Merging kubeconfig
 
 
-## Building from source
+## Building images
+
+
+> TODO - is this a new issue?
+
+```
+PS C:\Users\plang\go\src\k8s.io> dir
+
+
+    Directory: C:\Users\plang\go\src\k8s.io
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         11/4/2019   6:03 PM                kubernetes
+
+
+PS C:\Users\plang\go\src\k8s.io> cd ..
+PS C:\Users\plang\go\src> cd ..
+PS C:\Users\plang\go> kind build node-image
+ERRO[18:17:40] Failed to build Kubernetes: failed to build binaries: fork/exec build/run.sh: %1 is not a valid Win32 application.
+Error: error building node image: failed to build kubernetes: failed to build binaries: fork/exec build/run.sh: %1 is not a valid Win32 application.
+```
 
 
 ## Using a newer kubectl
